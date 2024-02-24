@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Gabe's blog</title>
-    </head>
-    
+{% extends 'blog/base.html' %}
+
+{% block content %}
     {% for post in posts %}
-        <article>
-            <time>published: {{ post.published_date }}</time>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </article>
+    <article class="post">
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p class="subtext">Posted {{ post.published_date }}</p>
+        <p class="post-content">{{ post.text|linebreaksbr }}</p>
+    </article>
     {% endfor %}
-</html>
+{% endblock %}
