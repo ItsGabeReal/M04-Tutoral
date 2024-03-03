@@ -1,17 +1,16 @@
-h1 a, h2 a {
-    color: #ff9345;
-    text-decoration: none;
+html * {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
 
 body {
     background-color: #080820;
 }
 
-html * {
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
+h1, h2, h1 a, h2 a {
+    color: #ff9345;
 }
 
 input, textarea {
@@ -22,22 +21,30 @@ input, textarea {
     padding: 5px;
 }
 
-.header-container {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(22, 112, 201);
+.btn-default {
+    color: #ffffff;
+    background-color: #313131;
 }
 
-.post-btn {
-    size: 100px;
-    margin-right: 10px;
+.header-container {
+    position: relative;
+    padding: 20px 20px 0px 20px;
+    background-color: rgb(22, 112, 201);
 }
 
 .title {
     text-align: center;
+    margin: 0;
+}
+
+.header-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.post-title {
+    margin: 0;
 }
 
 .subtext {
@@ -49,6 +56,22 @@ input, textarea {
     padding-left: 10px;
 }
 
+.post-view-container {
+    margin-top: 10px;
+}
+
+.post-view-actions-container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    background-color: #8882;
+    border-radius: 3px;
+}
+
+.action-icon {
+    margin: 5px;
+}
+
 .post {
     margin-top: 10px;
     padding: 8px;
@@ -57,6 +80,22 @@ input, textarea {
     width: 400px;
 }
 
+.comment {
+    padding: 10px;
+    background-color: #1f1f36;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
 .page-content {
-    margin-left: 10px;
+    margin-left: 15px;
+}
+
+.destructive {
+    color: red;
+}
+
+.fill-width {
+    width: 100%;
 }
