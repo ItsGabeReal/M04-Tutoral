@@ -14,10 +14,26 @@ html * {
     color: white;
 }
 
+input, textarea {
+    background-color: #1f1f36;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
 .header-container {
+    display: flex;
+    flex-flow: row;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color: rgb(22, 112, 201);
+}
+
+.post-btn {
+    size: 100px;
+    margin-right: 10px;
 }
 
 .title {
