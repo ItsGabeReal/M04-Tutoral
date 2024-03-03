@@ -34,7 +34,7 @@ input, textarea {
 
 .title {
     text-align: center;
-    margin: 0;
+    margin: 0px;
 }
 
 .header-actions {
@@ -44,7 +44,7 @@ input, textarea {
 }
 
 .post-title {
-    margin: 0;
+    margin: 0px;
 }
 
 .subtext {
